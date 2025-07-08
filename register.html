@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form id="registerForm">
+
+      <div class="form-group">
+        <input type="text" id="fullname" placeholder="Full Name" required />
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="phone" placeholder="Phone (10 digits)" required />
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="inline-options">
+          <label><input type="radio" name="gender" value="Male" /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="date" id="dob" required />
+      </div>
+
+      <div class="form-group">
+        <textarea id="address" placeholder="Address (min 10 chars)" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <select id="city">
+          <option value="">Select City</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Bangalore</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Skills:</label>
+        <div class="inline-options">
+          <label><input type="checkbox" value="HTML" /> HTML</label>
+          <label><input type="checkbox" value="CSS" /> CSS</label>
+          <label><input type="checkbox" value="JavaScript" /> JS</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Upload Profile Picture:</label>
+        <input type="file" id="profilePic" accept="image/*" />
+      </div>
+
+      <div class="form-group checkbox-align">
+        <input type="checkbox" id="terms" />
+        <label for="terms">I accept the terms</label>
+      </div>
+
+      <button type="submit" style="width: 100%;">Register</button>
+      <p id="errorMsg" class="error"></p>
+    </form>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

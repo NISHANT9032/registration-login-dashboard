@@ -1,0 +1,135 @@
+/* ---------- Global Reset ---------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Container ---------- */
+.container {
+  max-width: 500px;
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- Headings ---------- */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---------- Form Layout ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Inputs / Select / Textarea ---------- */
+input,
+textarea,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ---------- Group Containers ---------- */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* ---------- Inline Radio/Checkbox Layout ---------- */
+.inline-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.inline-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+/* ---------- Terms Checkbox Alignment ---------- */
+.checkbox-align {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-align input[type="checkbox"] {
+  margin: 0;
+  width: auto;
+}
+
+/* ---------- Submit Button ---------- */
+button {
+  padding: 12px;
+  background-color: #007bfc;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+/* ---------- Error Message ---------- */
+.error {
+  color: red;
+  font-size: 14px;
+  animation: fadeIn 0.4s ease-in;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* ---------- Register Link ---------- */
+form a {
+  color: #007bfc;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s ease;
+  border: 1px solid red !important;
+  background-color: #ffe6e6;
+}
