@@ -19,19 +19,18 @@
         <input type="email" id="email" placeholder="Email" required />
       </div>
 
-      <div class="form-group">
-        <input type="password" id="password" placeholder="Password" required />
-      </div>
-
-      <div class="form-group">
-        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
-      </div>
+        <!-- Password -->
       <div class="form-group password-toggle">
         <input type="password" id="password" placeholder="Password" required />
-        <span class="toggle-eye" onclick="togglePassword()">
-          👁️
-        </span>
+        <span class="toggle-eye" onclick="togglePassword('password')">👁️</span>
       </div>
+
+      <!-- Confirm Password -->
+     <div class="form-group password-toggle">
+       <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+       <span class="toggle-eye" onclick="togglePassword('confirmPassword')">👁️</span>
+      </div>
+
       <div class="form-group">
         <input type="text" id="phone" placeholder="Phone (10 digits)" required />
       </div>
