@@ -133,3 +133,19 @@ form a:hover {
   border: 1px solid red !important;
   background-color: #ffe6e6;
 }
+.password-toggle {
+  position: relative;
+}
+
+.password-toggle input {
+  padding-right: 40px;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}

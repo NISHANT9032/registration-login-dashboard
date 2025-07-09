@@ -6,6 +6,12 @@ function showLoginError(message) {
   setTimeout(() => form.classList.remove("shake"), 300);
 }
 
+function togglePassword(id = "password") {
+  const field = document.getElementById(id);
+  field.type = field.type === "password" ? "text" : "password";
+}
+
+
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const email = document.getElementById("email").value.trim();

@@ -4,6 +4,12 @@ function showError(element, message) {
   element.classList.add("shake");
   setTimeout(() => element.classList.remove("shake"), 300);
 }
+ 
+function togglePassword(id = "password") {
+  const field = document.getElementById(id);
+  field.type = field.type === "password" ? "text" : "password";
+}
+
 
 document.getElementById("registerForm").addEventListener("submit", function (e) {
   e.preventDefault();
