@@ -27,6 +27,7 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
   const terms = document.getElementById("terms").checked;
   const profilePic = document.getElementById("profilePic").files[0];
   const skills = [...document.querySelectorAll("input[type='checkbox']:checked")].map(cb => cb.value);
+   if (skills.length === 0) return showError(document.getElementById("city"), "Select at least one skill");
 
   const age = new Date().getFullYear() - new Date(dob).getFullYear();
 
