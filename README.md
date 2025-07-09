@@ -5,7 +5,6 @@ A frontend-only mini project built using **HTML**, **CSS**, and **JavaScript** t
 ## 🌐 Live Demo
 🔗 [Click to open live site](https://NISHANT9032.github.io/registration-login-dashboard/register.html)
 
-> *(Make sure GitHub Pages is enabled — see instructions below if it's not working)*
 
 ---
 
