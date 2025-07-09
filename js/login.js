@@ -8,9 +8,10 @@ function showLoginError(message) {
 
 function togglePassword(id = "password") {
   const field = document.getElementById(id);
-  field.type = field.type === "password" ? "text" : "password";
+  if (field) {
+    field.type = field.type === "password" ? "text" : "password";
+  }
 }
-
 
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
