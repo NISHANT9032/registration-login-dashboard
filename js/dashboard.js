@@ -12,7 +12,8 @@ if (user) {
     <p><strong>Phone:</strong> ${user.phone}</p>
     <p><strong>Gender:</strong> ${user.gender}</p>
     <p><strong>City:</strong> ${user.city}</p>
-     <p><strong>Skills:</strong> ${user.skills.length > 0 ? user.skills.join(", ") : "None selected"}</p>
+    <p><strong>Skills:</strong> ${user.skills.filter(skill => skill && skill !== "on").join(", ")}</p>
+
 
   `;
 }
