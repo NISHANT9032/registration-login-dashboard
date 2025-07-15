@@ -47,31 +47,6 @@ A frontend-only mini project built using **HTML**, **CSS**, and **JavaScript** t
 - ✅ Responsive, minimal UI with clean structure  
 - ✅ Hosted via GitHub Pages
 
----
-
-## ▶️ How to Run the Project
-
-### 💻 Local Setup
-
-```bash
-git clone https://github.com/NISHANT9032/registration-login-dashboard.git
-cd registration-login-dashboard
-```
-
-Then open `register.html` in your browser.
-
-### 🌐 Live Version
-
-Enable GitHub Pages in your repo:
-- Go to **Settings → Pages**
-- Source: `main`, Folder: `/ (root)` → Save
-
-Access your site at:
-```
-https://NISHANT9032.github.io/registration-login-dashboard/register.html
-```
-
----
 
 ## 📁 Folder Structure
 
